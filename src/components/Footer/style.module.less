@@ -1,0 +1,70 @@
+@media screen and (min-width: 992px) {
+  .zl-footer-wrapper {
+    width: 100%;
+    height: 255px;
+
+    color: var(--yougong-base-color);
+    background-color: var(--yougong-base-color5);
+
+    .content {
+      width: 70%;
+      height: 255px;
+      display: flex;
+      margin: auto;
+      gap: 150px;
+
+      .left {
+        width: 380px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .right {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+
+        color: #ccc;
+
+
+        .line {
+          width: 540px;
+          height: 1px;
+          background-color: #666666;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .zl-footer-wrapper {
+    width: 100%;
+    padding: 20px;
+    color: var(--yougong-base-color);
+    background-color: var(--yougong-base-color5);
+
+    .content {
+      padding: 10px 0;
+      line-height: 25px;
+      text-align: center;
+
+      .concat {
+        display: block;
+
+        a {
+          color: var(--yougong-base-color);
+        }
+      }
+
+      .shou {
+        display: none;
+      }
+    }
+  }
+}

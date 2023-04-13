@@ -1,0 +1,42 @@
+.zl-info-one-wrapper {
+  text-align: center;
+
+  @media screen and (min-width: 992px) {
+    .title {
+      padding: 40px 0;
+      font-size: 2rem;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+  @media screen and (max-width: 1440px) {
+    .title {
+      padding: 40px 0;
+      font-size: 1.75rem;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .title {
+      padding: 40px 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+  }
+}

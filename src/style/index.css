@@ -1,0 +1,29 @@
+/* stylelint-disable-next-line string-quotes */
+@import './reset.css';
+@import './theme.css';
+@import './globalClass.css';
+
+@media (min-width: 992px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html,
+  body {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1680px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
