@@ -9,8 +9,8 @@ import {
 } from '@ant-design/icons'
 
 import style from './style.module.less'
-import lunbo1 from '@/assets/images/home/lunbo1.png'
 
+import ZLCarousel from '@/components/Carousel'
 const ZLSolution = () => {
   // state & props
   const [info] = React.useState([
@@ -46,13 +46,8 @@ const ZLSolution = () => {
 
   return (
     <div className={style.zlSolutionWrapper}>
-      <div className={style.lunbo}>
-        <img src={lunbo1} alt="" />
-        <div className={style.ld}>
-          <span>杭州友恭科技有限公司</span>
-          <br />
-          <span>我们致力于为更多的客户提供了更专业的基于区块链的溯源系统</span>
-        </div>
+      <div className={style.carousel}>
+        <ZLCarousel />
       </div>
       <div className={style.content}>
         <h2 className={style.title}>

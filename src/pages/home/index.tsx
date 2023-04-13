@@ -11,9 +11,7 @@ import ZLInfoSix from './cpns/InfoSix'
 import style from './style.module.less'
 
 const ZLHome = () => {
-  // state & props
 
-  // handles
 
   return (
     <div className={style.zlHomeWrapper}>

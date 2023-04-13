@@ -11,15 +11,16 @@ const ZLConcat = () => {
 
   return (
     <div className={style.zlConcatWrapper}>
-      <ZLCarousel />
+      <div className={style.carousel}>
+        <ZLCarousel />
+      </div>
       <div className={style.content}>
         <div className={style.info}>
           <h2 className={style.title}>杭州友恭科技有限公司</h2>
           <ul className={style.desc}>
-            <li>联系电话：0571-86772312</li>
-            <li>售后电话：0571-86778673</li>
-            <li>微信公众号：gh_4a066d82e2fd</li>
-            <li>联系邮箱：surport@yougong.com</li>
+            <li></li>
+
+            <li>联系邮箱：surport@yougonghz.com</li>
             <li>总部地址：杭州市西湖区西溪银泰南2楼7层703室</li>
           </ul>
         </div>

@@ -77,7 +77,7 @@ const ZLHeader = () => {
     navigate(path)
   }
   useEffect(() => {
-    console.log('[ location.pathname ] >', location.pathname)
+
     setCheckName(location.pathname)
 
   }, [location])
@@ -105,11 +105,12 @@ const ZLHeader = () => {
               </Dropdown>
             </li>
             <li>
-              <Dropdown overlay={menuTwo} placement={'bottom'}>
+              <NavLink to="/intro" style={{ color: (checkName == '/intro' || checkName == '/staff') ? '#00b9f1' : 'black' }}>关于我们</NavLink>
+              {/* <Dropdown overlay={menuTwo} placement={'bottom'}>
                 <a onClick={(e) => e.preventDefault()}>
                   <Space style={{ color: (checkName == '/intro' || checkName == '/staff') ? '#00b9f1' : 'black' }}>关于我们</Space>
                 </a>
-              </Dropdown>
+              </Dropdown> */}
             </li>
             {/*  <li>
               <NavLink to="/dynamic">公司动态</NavLink>
@@ -155,11 +156,11 @@ const ZLHeader = () => {
             </dd>
           </dl>
           <dl className="antd-li">
-            <dt className="antd-dt" onClick={showAboutMenu}>
+            <dt className="antd-dt" onClick={() => toAboutPath('/intro')} >
               <span>关于我们</span>
-              <span>{aboutVisible ? <UpOutlined /> : <DownOutlined />}</span>
+              {/* <span>{aboutVisible ? <UpOutlined /> : <DownOutlined />}</span> */}
             </dt>
-            <dd className={aboutVisible ? 'open' : 'close'}>
+            {/* <dd className={aboutVisible ? 'open' : 'close'}>
               <ul>
                 <li onClick={() => toAboutPath('/intro')}>
                   <p>公司简介</p>
@@ -168,7 +169,7 @@ const ZLHeader = () => {
                   <p>员工概况</p>
                 </li>
               </ul>
-            </dd>
+            </dd> */}
           </dl>
 
           <li className="antd-li" onClick={() => toLocation('/concat')}>

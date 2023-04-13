@@ -7,9 +7,8 @@ import lunbo1 from '@/assets/images/home/lunbo1.png'
 import finance1 from '@/assets/images/finance/finance1.png'
 import finance2 from '@/assets/images/finance/finance2.png'
 import finance3 from '@/assets/images/finance/finance3.png'
-
+import ZLCarousel from '@/components/Carousel'
 const ZLFinance = () => {
-  // state & props
   const [info] = React.useState([
     {
       id: 1,
@@ -58,13 +57,8 @@ const ZLFinance = () => {
 
   return (
     <div className={style.zlFinanceWrapper}>
-      <div className={style.lunbo}>
-        <img src={lunbo1} alt="" />
-        <div className={style.ld}>
-          <span>杭州友恭科技有限公司</span>
-          <br />
-          <span>我们致力于为更多的客户提供了更专业的基于区块链的溯源系统</span>
-        </div>
+      <div className={style.carousel}>
+        <ZLCarousel />
       </div>
       <div className={style.content}>
         <h2 className={style.title}>

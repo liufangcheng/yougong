@@ -32,7 +32,7 @@ const ZLBrokers = () => {
   return (
     <div >
       <CardBroker info={arr[0]}></CardBroker>
-      <CardBroker info={arr[1]} color='#1A559c'></CardBroker>
+      <CardBroker info={arr[1]} color='#1A559c' direction='right'></CardBroker>
       <CardBroker info={arr[2]} ></CardBroker>
     </div>
   )

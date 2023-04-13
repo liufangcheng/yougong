@@ -13,29 +13,40 @@ type CardBrokerProps = {
     text: string,
     src: string
   },
-  color?: string
+  color?: string,
+  direction?: string
 };
 
 const CardBroker = (props: CardBrokerProps) => {
-
-
-
+  const { info, color, direction = 'left' } = props
   return (
     <div className={style.zlFinanceWrapper} style={{ backgroundColor: props.color, color: props.color ? 'white' : '#555555' }}>
       <div className={style.content}>
         <div className={style.detail}>
-          <div className={style.left}>
+          {direction == 'left' ? <div className={style.left}>
             <div className={style.title}>
               {props.info.title}
             </div>
             <div className={style.text}>
               {props.info.text}
             </div>
-          </div>
-          <div className={style.right}>
+          </div> : <div className={style.right}>
             <img src={props.info.src} alt="" />
 
-          </div>
+          </div>}
+          {direction == 'left' ? <div className={style.right}>
+            <img src={props.info.src} alt="" />
+
+          </div> : <div className={style.left}>
+            <div className={style.title}>
+              {props.info.title}
+            </div>
+            <div className={style.text}>
+              {props.info.text}
+            </div>
+          </div>}
+
+
         </div>
       </div>
     </div>

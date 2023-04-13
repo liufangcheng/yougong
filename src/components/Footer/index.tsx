@@ -14,7 +14,7 @@ const ZLFooter = () => {
         </div>
         <div className={style.right}>
           <div style={{ marginBottom: '20px' }}>
-            邮箱：surport@yougong.com
+            邮箱：surport@yougonghz.com
           </div>
           <div style={{ marginBottom: '20px' }}>
             总部地址：杭州市西湖区西溪银泰南2号楼7层703室
