@@ -24,12 +24,12 @@ const ZLFinance = () => {
       imgUrl: finance2,
       path: '/privateManagement'
     },
-    {
-      id: 3,
-      title: '数据货币钱包',
-      desc: '应用于数据虚拟货币的钱包工具，提供多种加密方式',
-      imgUrl: finance3
-    }
+    // {
+    //   id: 3,
+    //   title: '数据货币钱包',
+    //   desc: '应用于数据虚拟货币的钱包工具，提供多种加密方式',
+    //   imgUrl: finance3
+    // }
   ])
   const [info2] = React.useState([
     {
