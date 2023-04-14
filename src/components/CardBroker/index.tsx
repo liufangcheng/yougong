@@ -7,11 +7,12 @@ import lunbo1 from '@/assets/images/home/lunbo1.png'
 import finance1 from '@/assets/images/home/zq.png'
 import finance2 from '@/assets/images/finance/finance2.png'
 import finance3 from '@/assets/images/finance/finance3.png'
-type CardBrokerProps = {
+export type CardBrokerProps = {
   info: {
     title: string,
     text: string,
-    src: string
+    src: string,
+    srcSize?: React.CSSProperties
   },
   color?: string,
   direction?: string
@@ -30,11 +31,11 @@ const CardBroker = (props: CardBrokerProps) => {
             <div className={style.text}>
               {props.info.text}
             </div>
-          </div> : <div className={style.right}>
+          </div> : <div className={style.right} className={style.right} style={props.info.srcSize}>
             <img src={props.info.src} alt="" />
 
           </div>}
-          {direction == 'left' ? <div className={style.right}>
+          {direction == 'left' ? <div className={style.right} style={props.info.srcSize}>
             <img src={props.info.src} alt="" />
 
           </div> : <div className={style.left}>
@@ -45,8 +46,6 @@ const CardBroker = (props: CardBrokerProps) => {
               {props.info.text}
             </div>
           </div>}
-
-
         </div>
       </div>
     </div>

@@ -9,10 +9,16 @@ import finance2 from '@/assets/images/home/hs2.png'
 import finance3 from '@/assets/images/home/hs3.png'
 import finance4 from '@/assets/images/home/hs5.jpg'
 import finance5 from '@/assets/images/home/hs4.png'
+import finance6 from '@/assets/images/home/hs6.png'
 import CardBroker from '@/components/CardBroker'
 
 const ZLBrokers = () => {
   let arr = [
+    {
+      title: '背景',
+      text: '目前全国约100万家资源回收类注册公司，该项目的目标是实现资源回收的闭环，将小型个体回收公司、资源回收公司、物流公司和材料加工工厂进行连接和协同，通过订单管理、电子合同、费用核销、电子发票等流程实现全链条的业务管理和财务闭环。该项目采用APP作为载体，通过信息技术手段实现全过程的自动化和数字化管理。该项目可以有效提高资源回收效率，降低物流成本，促进资源回收产业的健康发展。',
+      src: finance6
+    },
     {
       title: '资源回收的闭环',
       text: '该项目的目标是实现资源回收的闭环，将小型个体回收公司、资源回收公司、物流公司和材料加工工厂进行连接和协同，通过订单管理、电子合同、费用核销、电子发票等流程实现全链条的业务管理和财务闭环。该项目采用APP作为载体，通过信息技术手段实现全过程的自动化和数字化管理。该项目可以有效提高资源回收效率，降低物流成本，促进资源回收产业的健康发展。',
@@ -48,6 +54,7 @@ const ZLBrokers = () => {
       <CardBroker info={arr[2]} ></CardBroker>
       <CardBroker info={arr[3]} color='#1A559c' direction='right'></CardBroker>
       <CardBroker info={arr[4]} ></CardBroker>
+      <CardBroker info={arr[5]} color='#1A559c' direction='right'></CardBroker>
     </div>
   )
 }
